@@ -8,7 +8,7 @@
 
 |공부기간|Model|Paper|Code|
 |:----|:----|:---:|:------:|
-|220105 ~|[ViT](https://arxiv.org/pdf/2010.11929.pdf)|❌|❌|
+|220105 ~|[ViT](https://arxiv.org/pdf/2010.11929.pdf)|[정리중](TIL_DL/Models/ViT/README.md)|❌|
 ||[BERT](https://arxiv.org/abs/1810.04805)|❌|❌|
 ||[Attention all you need](https://arxiv.org/abs/1706.03762)|❌|❌|
 ||
