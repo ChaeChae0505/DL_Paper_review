@@ -7,10 +7,10 @@
   - [3][예제로 배우는 pytorch](https://tutorials.pytorch.kr/beginner/pytorch_with_examples.html)
   - [4][Pytorch 활성화 함수의 종류](https://pytorch.org/docs/stable/nn.html#non-linear-activations-weighted-sum-nonlinearity)
 ---
-### 폴더 구성 내용정리 
+### To-Do List 
 |Model|Paper|Code|
 |:----|:---:|:------:|
-|ViT|❌|❌|
+|[ViT](https://arxiv.org/pdf/2010.11929.pdf)|❌|❌|
 ||
 😆✔️✔️
 🙂❌✔️
