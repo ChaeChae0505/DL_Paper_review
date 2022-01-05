@@ -24,6 +24,7 @@
 ## 목차  
 [신경망 모델 정의하는 방법](#신경망-모델-정의하는-방법)
 [차원관리einops](#차원관리)
+[torch.cat](#torch-cat)
 
 ---
 
@@ -55,3 +56,36 @@ output_tensor = reduce(input_tensor, 'b c (h h2) (w w2) -> b h w c', 'mean', h2=
 output_tensor = repeat(input_tensor, 'h w -> h w c', c=3)
 ```
 - str로 차원 관리를 한다는게 익숙하지는 않지만, 그래도 엄청 직관적인 것 같다
+
+## torch cat
+- casting 하는 존재인 거 같다
+> torch.cat(tensors, dim=0, *, out=None) 
+
+```
+Parameters
+tensors (sequence of Tensors) – any python sequence of tensors of the same type. Non-empty tensors provided must have the same shape, except in the cat dimension.
+
+dim (int, optional) – the dimension over which the tensors are concatenated
+
+Keyword Arguments
+out (Tensor, optional) – the output tensor.
+```
+
+```python
+>>> x = torch.randn(2, 3)
+>>> x
+tensor([[ 0.6580, -1.0969, -0.4614],
+        [-0.1034, -0.5790,  0.1497]])
+>>> torch.cat((x, x, x), 0)
+tensor([[ 0.6580, -1.0969, -0.4614],
+        [-0.1034, -0.5790,  0.1497],
+        [ 0.6580, -1.0969, -0.4614],
+        [-0.1034, -0.5790,  0.1497],
+        [ 0.6580, -1.0969, -0.4614],
+        [-0.1034, -0.5790,  0.1497]])
+>>> torch.cat((x, x, x), 1)
+tensor([[ 0.6580, -1.0969, -0.4614,  0.6580, -1.0969, -0.4614,  0.6580,
+         -1.0969, -0.4614],
+        [-0.1034, -0.5790,  0.1497, -0.1034, -0.5790,  0.1497, -0.1034,
+         -0.5790,  0.1497]])
+```
