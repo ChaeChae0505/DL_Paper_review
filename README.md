@@ -22,7 +22,8 @@
   - [5][paper review](https://github.com/Seonghoon-Yu/AI_Paper_Review)
 
 ## 목차  
-[신경망 모델 정의하는 방법](#신경망-모델-정의하는-방법) 
+[신경망 모델 정의하는 방법](#신경망-모델-정의하는-방법)
+[차원관리einops](#차원관리)
 
 ---
 
@@ -42,6 +43,15 @@
 ## nn.Sequential 과 nn.ModuleList 차이
 - 이해가 어렵다 대충 이해 했을 때 sequential은 모델들을 순차적으로 합칠 수 있는 듯 하다 [참고](https://michigusa-nlp.tistory.com/26) 다시 읽어보자
 
-
-
-
+## 차원관리
+- ViT code를 보다 알게 되었다.
+```
+from einops import rearrange, reduce, repeat
+# rearrange elements according to the pattern
+output_tensor = rearrange(input_tensor, 't b c -> b c t')
+# combine rearrangement and reduction
+output_tensor = reduce(input_tensor, 'b c (h h2) (w w2) -> b h w c', 'mean', h2=2, w2=2)
+# copy along a new axis 
+output_tensor = repeat(input_tensor, 'h w -> h w c', c=3)
+```
+- str로 차원 관리를 한다는게 익숙하지는 않지만, 그래도 엄청 직관적인 것 같다
