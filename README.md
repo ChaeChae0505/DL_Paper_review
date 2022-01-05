@@ -7,6 +7,9 @@
   - [3][예제로 배우는 pytorch](https://tutorials.pytorch.kr/beginner/pytorch_with_examples.html)
   - [4][Pytorch 활성화 함수의 종류](https://pytorch.org/docs/stable/nn.html#non-linear-activations-weighted-sum-nonlinearity)
 ---
+## 폴더 구성 내용정리 
+
+---
 목차  
 [신경망 모델 정의하는 방법](#신경망-모델-정의하는-방법) 
 
