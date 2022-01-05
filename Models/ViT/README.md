@@ -3,7 +3,7 @@
 - 분류 : Transformer
 - 저자 : Alexey Dosovitskiy, , Lucas Beyer , Alexander Kolesnikov , Dirk Weissenborn
 - 읽는 배경 : Visoin Transformers 가 도대체 뭔지 알아보기. 
-- 느낀점 : Transformer의 기초를 읽어보자 attention all ~
+- 느낀점 : Transformer의 기초를 읽어보자 attention is all you need 먼저 읽기, BERT도 읽어보기 - 아니면 이해 안 될듯 / 코드 구현하려면 pytorch 기본 내용 먼저 보기
 - 공부 참고자료
 - [1][Yotube](https://www.youtube.com/watch?v=TrdevFK_am4&t=847s)
 - [2][CODE vit-pytorch](https://github.com/lucidrains/vit-pytorch)
