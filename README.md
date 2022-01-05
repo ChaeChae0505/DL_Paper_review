@@ -22,17 +22,20 @@
   - [5][paper review](https://github.com/Seonghoon-Yu/AI_Paper_Review)
 
 ## 목차  
-[신경망 모델 정의하는 방법](#신경망-모델-정의하는-방법)
-[차원관리einops](#차원관리)
-[torch.cat](#torch-cat)
+[신경망 모델 정의하는 방법](#신경망-모델-정의하는-방법)  
+[차원관리einops](#차원관리)  
+[torch.cat](#torch-cat)  
 
 ---
 
 ## 신경망 모델 정의하는 방법 
+- [참고1](https://anweh.tistory.com/21)
+- [참고2](https://data-panic.tistory.com/15)
 ```
 @ Pytorch 신경망 설계 방법
 1. 사용자 정의 nn 모듈
 2. nn.Module 상속한 클래스 이용
+- class로 선언할 때 __init__과 forward는 필수!
 
 
 @ pytorch로 신경망 모델 설계 시 Step
