@@ -1,5 +1,5 @@
 # TIL_DL_NEW
-- 모델 구현 ! 은 TIL_DL_NEW / vit / modelname.ipynb 로 보내고
+- 모델 구현 ! 은 TIL_DL_NEW/ Models / vit / modelname.ipynb 로 보내고, README에다 정리하자
 - 기타 pytorch tip은 TIL_DL_NEW/README.md 에 적자
   - pytorch model 생성 팁 참고
   - [1][https://gaussian37.github.io/dl-pytorch-snippets/](https://gaussian37.github.io/dl-pytorch-snippets/)
