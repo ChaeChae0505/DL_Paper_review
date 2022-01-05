@@ -31,11 +31,13 @@
 ## 신경망 모델 정의하는 방법 
 - [참고1](https://anweh.tistory.com/21)
 - [참고2](https://data-panic.tistory.com/15)
+- [wikidocs pytorch로 시작하는 딥러닝 입문](https://wikidocs.net/60036)
 ```
 @ Pytorch 신경망 설계 방법
 1. 사용자 정의 nn 모듈
 2. nn.Module 상속한 클래스 이용
 - class로 선언할 때 __init__과 forward는 필수!
+- forward에서 H(x)에 입력 x로 부터 예측된 결과 y를 얻게 해줌!
 
 
 @ pytorch로 신경망 모델 설계 시 Step
