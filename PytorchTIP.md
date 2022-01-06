@@ -6,6 +6,7 @@
   - [3][예제로 배우는 pytorch](https://tutorials.pytorch.kr/beginner/pytorch_with_examples.html)
   - [4][Pytorch 활성화 함수의 종류](https://pytorch.org/docs/stable/nn.html#non-linear-activations-weighted-sum-nonlinearity)
   - [5][paper review](https://github.com/Seonghoon-Yu/AI_Paper_Review)
+  - [6][pytorch multi-gpu제대로 사용하기](https://medium.com/daangn/pytorch-multi-gpu-%ED%95%99%EC%8A%B5-%EC%A0%9C%EB%8C%80%EB%A1%9C-%ED%95%98%EA%B8%B0-27270617936b)
 
 ## 목차  
 [신경망 모델 정의하는 방법](#신경망-모델-정의하는-방법)  
@@ -80,3 +81,4 @@ tensor([[ 0.6580, -1.0969, -0.4614,  0.6580, -1.0969, -0.4614,  0.6580,
         [-0.1034, -0.5790,  0.1497, -0.1034, -0.5790,  0.1497, -0.1034,
          -0.5790,  0.1497]])
 ```
+
