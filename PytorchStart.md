@@ -20,11 +20,24 @@
 
 
 ### 0.빠른 시작
+#### 데이터 작업하기
 - 데이터 작업을 위한 기본 요소 1)*torch.utils.data.Dataset* 2)*torch.utils.data.DataLoader* 이 있다. PyTorch는 TorchText, [TorchVision](https://pytorch.org/vision/stable/index.html) 및 TorchAudio같은 데이터셋도 제공하고 있음
-- 
-1)*torch.utils.data.Dataset* : 샘플과 정답(label)을 저장[참고](https://pytorch.org/vision/stable/datasets.html)
-2) *torch.utils.data.DataLoader* : Dataset을 순회 가능한 객체(iterable)로 감쌈
 
+1)*torch.utils.data.Dataset* : 샘플과 정답(label)을 저장[참고](https://pytorch.org/vision/stable/datasets.html) 
+- 사용할 수 있는 [dataset 목록](https://pytorch.org/vision/stable/datasets.html)
+2) *torch.utils.data.DataLoader* : Dataset을 순회 가능한 객체(iterable)로 감쌈  
 
+#### 모델 만들기
+#### 모델 매개변수 최적화하기
+#### 모델 저장하기
+#### 모델 불러오기
+
+### 1.Tensor
+### 2.Dataset과 Dataloader
+### 3.Transform
+### 4.신경망 모델 구성하기 
+### 5.Autograd
+### 6.최적화(Optimization)
+### 7.모델 저장하고 불러오기
 ---
 
