@@ -11,12 +11,13 @@
 ---
 요약 
 - vision task에서 Transformer를 사용해서 잘 작동하게 만들었다
+- easy code부분을 보자
 ---
 
 
 ## Method
 - Transformer encoder 부분은 어떻게 만들었을까?
-- 
+- ViT.ipynb에 대해 설명하자면, 
 1. Patch Embedding
 - 이미지를 받아서
 - 16x16으로 patch를 자른다 
