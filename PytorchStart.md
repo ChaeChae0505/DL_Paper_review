@@ -13,3 +13,5 @@
 6. Data Loader& make NN
 7. Network 만들기 & 저장 불러오기
 8. visdom
+---
+- 아니 이렇게 좋은 [자료](https://github.com/sgrvinod/Deep-Tutorials-for-PyTorch)가
