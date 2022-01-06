@@ -1,5 +1,6 @@
 # DL 
 - 모델 구현 ! 은 TIL_DL_NEW/ Models / vit / modelname.ipynb 로 보내고, README에다 정리하자
+- 모델 분석을 하지 않는 ! 논문리뷰는 Issue에 일단 두자
 - pytorch wikidocs를 보면서 기본을 다지고
 - pytorch tip들에 대해서 적습니다.
 ---
