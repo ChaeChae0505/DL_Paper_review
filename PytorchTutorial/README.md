@@ -11,6 +11,9 @@
 - *Selective Search* 
 - Multi object detection 
 - 엥 two stage detector랑 one stage detector 를 구별하는 기준은 알겠는데 실제로 어떻게 다르게 동작하는 거지?
+- 한번 봤던 내용인데 이해가 안 되는 거는,,, 내가 공부를 제대로 안했다는 말,,,, 이번에 코드도 같이 보자
+
+
 
 - 근데 사실 object detection에서는 클래스, cx,cy(센터값), h, w(가로세로) 좌표를 regression하는 것과 같다. 근데 anchor box가 왜 필요한가?
 - [Andrew ang님의 강의를 참고](https://www.youtube.com/watch?v=XdsmlBGOK-k)
