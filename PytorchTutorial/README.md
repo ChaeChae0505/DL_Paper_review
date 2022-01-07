@@ -9,7 +9,22 @@
 #### 1. VOC dataset
 - http://host.robots.ox.ac.uk/pascal/VOC/voc2012/
 - http://host.robots.ox.ac.uk/pascal/VOC/voc2007/
-- <img src="https://github.com/ChaeChae0505/TIL_Study/blob/main/Image/pandasloc.JPG" width="50%" height="50%">
+- <img src="https://github.com/ChaeChae0505/TIL_STUDY/blob/main/Image/VOC.JPG" width="50%" height="50%">
+- 위에 꺼처럼 다운 받는다
+- 다운 받고 압축을 풀면, tar이라서 windows에서는 반디집 깔아야 풀 수 있다
+- 아래 처럼 Annotation이 되있는 것을 확인 할 수 있다
+- <img src="https://github.com/ChaeChae0505/TIL_STUDY/blob/main/Image/pascal.JPG" width="50%" height="50%">
+
+#### 2. Inputs to model
+- SSD300을 할껀데 input image size가 300, 300이란 말이다. 
+- VGG-16 pretrained on ImageNet 을 사용할 것이다 pytorch의 torchivision module에 있다
+
+##### Images
+- Imagenet을 pre-trained로 사용할 것인데 그래서 정규화 필요! [0,1]로 
+- image 는 NCHW로 되어있는데 [batch size, channel, height, width]
+
+##### Object's Bounding Boxes
+- (x_min, y_min, x_max, y_max)
 
 
 ### git을 파기전에 궁금한 개념들
