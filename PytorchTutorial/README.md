@@ -9,7 +9,8 @@
 #### 1. VOC dataset
 - http://host.robots.ox.ac.uk/pascal/VOC/voc2012/
 - http://host.robots.ox.ac.uk/pascal/VOC/voc2007/
-- 
+- <img src="https://github.com/ChaeChae0505/TIL_Study/blob/main/Image/pandasloc.JPG" width="50%" height="50%">
+
 
 ### git을 파기전에 궁금한 개념들
 - bounding box는 왜 필요?
