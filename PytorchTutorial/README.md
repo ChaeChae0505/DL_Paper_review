@@ -2,6 +2,14 @@
 - [Link](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Object-Detection)
 - 종류 : Single-shot Detection
 - 수행 기간 : 22.01.06 ~
+- 실행시키기위해서!
+(1) VOC dataset download
+
+
+#### 1. VOC dataset
+- http://host.robots.ox.ac.uk/pascal/VOC/voc2012/
+- http://host.robots.ox.ac.uk/pascal/VOC/voc2007/
+- 
 
 ### git을 파기전에 궁금한 개념들
 - bounding box는 왜 필요?
@@ -31,6 +39,3 @@
 
 ## Single-shot detection 특징
 
-#### VOC dataset
-- http://host.robots.ox.ac.uk/pascal/VOC/voc2012/
-- http://host.robots.ox.ac.uk/pascal/VOC/voc2007/
