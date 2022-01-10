@@ -5,8 +5,9 @@
 - pytorch tip들에 대해서 적습니다.
 - 정리가 잘 된 내용은 블로그로 옮기자!
 ---
-### Paper review List 
+### Review List 
 - Paper review 및 model 구현 내용에 대해 작성합니다.
+- 꼼꼼한 구현
 
 |공부기간|분류|Model|Paper|Code|
 |:----|:----|:----|:---:|:------:|
@@ -19,3 +20,7 @@
 😡❌❌
 
 ---
+### Issues TO-Do list
+|일자|분류|Title|Paper|Code|
+|:----|:----|:----|:---:|:------:|
+|220110|6dof pose estimation|Neural Object Learning for 6D Pose Estimation Using a Few Cluttered Images|[Paper](https://arxiv.org/pdf/2005.03717.pdf)|[Code](https://github.com/kirumang/NOL)|
