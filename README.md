@@ -24,3 +24,4 @@
 |일자|분류|Title|Paper|Code|
 |:----|:----|:----|:---:|:------:|
 |220110|6dof pose estimation|Neural Object Learning for 6D Pose Estimation Using a Few Cluttered Images|[Paper](https://arxiv.org/pdf/2005.03717.pdf)|[Code](https://github.com/kirumang/NOL)|
+|220111|6dof pose estimation|DPOD: 6D Pose Object Detector and Refiner|[Paper](https://arxiv.org/pdf/1902.11020.pdf)|[Code](https://github.com/yashs97/DPOD)|
