@@ -24,7 +24,17 @@
 - Input image가 object detection 알고리즘 통과 후 bbox가 그려지면 어떤 물체일 확률 값을 가지게 되는데 이때 object 위에 생기는 많은 bbox에 대해 가장 스코어가 높은 박스만 남기고 나머지를 제거하는 것이 NMS 이다.
 - NMS 의 Input은 B(bbox list),S(bbox의 confidence scores),N 중첩 임계값 / Output은 D 필터링된 bbox list   
 - code [1](https://github.com/amusi/Non-Maximum-Suppression/blob/master/nms.py)[2](https://heiwais25.github.io/machine%20learning/cnn/2018/05/10/non-maximum-suppression/)
-- [자세한 설명 with code](https://towardsdatascience.com/non-maxima-suppression-139f7e00f0b5)
+- [자세한 설명 with code](https://towardsdatascience.com/non-maxima-suppression-139f7e00f0b5)  
+
+**Algorithm**  
+1. Confidence가 가장 높은 것을 선택하고 B에서 제거한 다음 D에 추가 함
+2. 모든 B를 비교하고 IoU를 계산 한다 IoU가 임계값 N보다 큰 경우 B에서 해당 B를 제거 한다
+3. 다시 B의 나머지 Box에서 confidence가 높은 제안을 B에서 제거하고 D에 추가한다
+4. 다시 한번 B의 모든 Box로 IoU를 계산하고 임계값 보다 IoU가 높은 상자를 제거함
+5. B에 더이상 box 제안이 남아있지 않을 때 까지 반복한다
+
+
+
 ```python
 # Felzenszwalb et al
 def non_max_suppression_fast(boxes, scores, iou_threshold):
@@ -73,13 +83,6 @@ def non_max_suppression_fast(boxes, scores, iou_threshold):
     return boxes[pick].astype("int")
 ```
 
-
-**Algorithm**  
-1. Confidence가 가장 높은 것을 선택하고 B에서 제거한 다음 D에 추가 함
-2. 모든 B를 비교하고 IoU를 계산 한다 IoU가 임계값 N보다 큰 경우 B에서 해당 B를 제거 한다
-3. 다시 B의 나머지 Box에서 confidence가 높은 제안을 B에서 제거하고 D에 추가한다
-4. 다시 한번 B의 모든 Box로 IoU를 계산하고 임계값 보다 IoU가 높은 상자를 제거함
-5. B에 더이상 box 제안이 남아있지 않을 때 까지 반복한다
 
 
 
