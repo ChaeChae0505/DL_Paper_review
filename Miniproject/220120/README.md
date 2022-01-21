@@ -8,7 +8,7 @@
 - 먼저 이런 멋진 [Tutorial](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/) 의 존재에 감사하며 이걸 먼저 따라 해보기로 함. [Full code](https://github.com/ayooshkathuria/YOLO_v3_tutorial_from_scratch)
 - 한국어 번역 version [here](https://deep-learning-study.tistory.com/411)
 - 구성은 다음과 같음 
-1. Understanding How YOLO works
+1. [Understanding How YOLO works](https://github.com/ChaeChae0505/Pytorch/blob/main/Miniproject/220120/1.UnderstandYOLO.md)
 2. Creating the layers of the network architecture
 3. Implementing the the forward pass of the network
 4. Objectness score thresholding and Non-maximum suppression
