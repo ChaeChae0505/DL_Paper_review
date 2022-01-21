@@ -21,7 +21,7 @@ Rbox 이게 젤 가깝지 않을까
 - 이외에 custom dataset 사용을 위해 추가로 Data 포맷 및 load 방법을 알아볼 것이다
 
 ---
-## 헷갈리는 부분들 
+## 헷갈리는 부분들 "개념"
 - loss function 으로 bounding box regression을 한다고 하는데,,,, 어떻게 하는 것이지...? 목적 함수가 어떻게 돌아가는지 이해가 되지 않는다.
 - 객체의 localization은 도대체 어떻게 하는 것인가?
 - **이 부분을 알아야하는 이유 : 나는 rotation도 한꺼번에 예측하는 모델을 만들고 싶다 제발**
@@ -40,4 +40,16 @@ Rbox 이게 젤 가깝지 않을까
 - RBox-CNN Rotated Bounding Box
 - RBox (x, y, h, w, theta(시계 반대방향으로 돌아간 정도{-pi/2, pi/2})) 
 - RBox regression 방법 smooth loss 는 Fast R-CNN의 정의와 같은 내용이다
-- 
+
+
+
+## 헷갈리는 부분 "코드"
+### Dataset load 할 때 Image 불러오는 방법
+1. Image folder를 이용해 dataload 하기
+```python
+
+trans = transforms.Compose([])
+train_data = torchvision.datasets.ImageFolder(root = path_train, transform = trans)
+test_data = torchvision.datasets.ImageFolder(root = path_test, transform = trans)
+
+```
