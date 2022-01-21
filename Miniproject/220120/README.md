@@ -61,10 +61,10 @@ def non_max_suppression_fast(boxes, scores, iou_threshold):
 	idxs = np.argsort(scores)
 	
 	while(len(idxs) > 0):
-        last = len(idxs) - 1
-        i = idxs[last]
-        pick.append(i)
-        
+		last = len(idxs) - 1
+		i = idxs[last]
+		pick.append(i)
+
         # With vector implementation, we can calculate fast
         xx1 = np.maximum(x1[i], x1[idxs[:last]])
         yy1 = np.maximum(y1[i], y1[idxs[:last]])
