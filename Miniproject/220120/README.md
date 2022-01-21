@@ -27,3 +27,12 @@
 - 테스트 메트릭과(IoU) 목적함수의 (L1, L2) 불일치를 극복하기 위해 IoU 자체를 목적함수로 하는 방법들이 여럿 제안 되었다고 한다,,,,,,(ex) Liou = 1- IoU )
 - 이를 개선하기 위해 제안된 방법으로 GIoU가 (Generalized IoU) 가 있다고,,,
 - [here](https://hongl.tistory.com/215) 여기 보고 더 찾아보자
+
+
+
+## 추가 하고 싶은 것들
+### [RBox](https://dl.acm.org/doi/pdf/10.1145/3274895.3274915)
+- RBox-CNN Rotated Bounding Box
+- RBox (x, y, h, w, theta(시계 반대방향으로 돌아간 정도{-pi/2, pi/2})) 
+- RBox regression 방법 smooth loss 는 Fast R-CNN의 정의와 같은 내용이다
+- 
