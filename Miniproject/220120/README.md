@@ -3,6 +3,11 @@
 2. Box를 segmentation을 통해 검출한다
 
 
+Rbox 이게 젤 가깝지 않을까
+- https://arxiv.org/pdf/1911.09358.pdf
+- https://norest73.tistory.com/4
+- https://github.com/MingtaoFu/gliding_vertex
+
 ## Purpose
 - Yolo 구현을 목표로 하여 custom dataset인 box에 적용해본다 -> center 파지점도 검출.
 - 먼저 이런 멋진 [Tutorial](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/) 의 존재에 감사하며 이걸 먼저 따라 해보기로 함. [Full code](https://github.com/ayooshkathuria/YOLO_v3_tutorial_from_scratch)
