@@ -29,6 +29,8 @@ torch.cuda.current_device()
 torch.cuda.get_device_name(0)
 ```
 
+## Taining , eval
+
 
 # error1
 dataloader - suffle 기능 false로 변경
