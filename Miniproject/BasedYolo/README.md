@@ -1,13 +1,4 @@
-- Box를 검출하는 알고리즘 
-1. Box를 bounding box를 통해 검출한다.
-2. Box를 segmentation을 통해 검출한다
-
-
-Rbox 이게 젤 가깝지 않을까
-- https://arxiv.org/pdf/1911.09358.pdf
-- https://norest73.tistory.com/4
-- https://github.com/MingtaoFu/gliding_vertex
-
+- 22.01.20 ~ 
 ## Purpose
 - Yolo 구현을 목표로 하여 custom dataset인 box에 적용해본다 -> center 파지점도 검출.
 - 먼저 이런 멋진 [Tutorial](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/) 의 존재에 감사하며 이걸 먼저 따라 해보기로 함. [Full code](https://github.com/ayooshkathuria/YOLO_v3_tutorial_from_scratch)
@@ -19,6 +10,9 @@ Rbox 이게 젤 가깝지 않을까
 4. Objectness score thresholding and Non-maximum suppression
 5. Designing the input and the output pipelines
 - 이외에 custom dataset 사용을 위해 추가로 Data 포맷 및 load 방법을 알아볼 것이다
+- weights들을 어떻게 불러오고 predicts 하는지도 알아볼 것이다
+
+
 
 ---
 ## 헷갈리는 부분들 "개념"
@@ -32,16 +26,7 @@ Rbox 이게 젤 가깝지 않을까
 - 테스트 메트릭과(IoU) 목적함수의 (L1, L2) 불일치를 극복하기 위해 IoU 자체를 목적함수로 하는 방법들이 여럿 제안 되었다고 한다,,,,,,(ex) Liou = 1- IoU )
 - 이를 개선하기 위해 제안된 방법으로 GIoU가 (Generalized IoU) 가 있다고,,,
 - [here](https://hongl.tistory.com/215) 여기 보고 더 찾아보자
-
-
-
-## 추가 하고 싶은 것들
-### [RBox](https://dl.acm.org/doi/pdf/10.1145/3274895.3274915)
-- RBox-CNN Rotated Bounding Box
-- RBox (x, y, h, w, theta(시계 반대방향으로 돌아간 정도{-pi/2, pi/2})) 
-- RBox regression 방법 smooth loss 는 Fast R-CNN의 정의와 같은 내용이다
-
-
+---
 
 ## 헷갈리는 부분 "코드"
 ### Dataset load 할 때 Image 불러오는 방법
@@ -53,3 +38,20 @@ train_data = torchvision.datasets.ImageFolder(root = path_train, transform = tra
 test_data = torchvision.datasets.ImageFolder(root = path_test, transform = trans)
 
 ```
+
+
+## 추가 하고 싶은 것들
+### [RBox](https://dl.acm.org/doi/pdf/10.1145/3274895.3274915)
+- RBox-CNN Rotated Bounding Box
+- RBox (x, y, h, w, theta(시계 반대방향으로 돌아간 정도{-pi/2, pi/2})) 
+- RBox regression 방법 smooth loss 는 Fast R-CNN의 정의와 같은 내용이다
+- Box를 검출하는 알고리즘 
+1. Box를 bounding box를 통해 검출한다.
+2. Box를 segmentation을 통해 검출한다
+
+
+Rbox 이게 젤 가깝지 않을까
+- https://arxiv.org/pdf/1911.09358.pdf
+- https://norest73.tistory.com/4
+- https://github.com/MingtaoFu/gliding_vertex
+
